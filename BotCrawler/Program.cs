@@ -4,11 +4,15 @@ using System.Threading.Tasks;
 namespace BootCrawler {
   class Program {
     static void Main(string[] args) {
-      LoadPage();
+      ScanBMW();
     }
 
-    private static async Task LoadPage() {
-      await ScanBmw.TestarCrawler();
+    private static async Task ScanBMW() {
+      await ScanBmw.GoScan();
+    }
+
+    private static async Task Other() {
+
     }
   }
 }

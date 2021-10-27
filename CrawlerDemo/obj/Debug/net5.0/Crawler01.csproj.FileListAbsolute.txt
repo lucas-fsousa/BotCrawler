@@ -1,0 +1,12 @@
+C:\Users\Lucas\source\repos\Crawler01\bin\Debug\net5.0\Crawler01.deps.json
+C:\Users\Lucas\source\repos\Crawler01\bin\Debug\net5.0\Crawler01.dll
+C:\Users\Lucas\source\repos\Crawler01\bin\Debug\net5.0\ref\Crawler01.dll
+C:\Users\Lucas\source\repos\Crawler01\bin\Debug\net5.0\Crawler01.pdb
+C:\Users\Lucas\source\repos\Crawler01\obj\Debug\net5.0\Crawler01.csproj.AssemblyReference.cache
+C:\Users\Lucas\source\repos\Crawler01\obj\Debug\net5.0\Crawler01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lucas\source\repos\Crawler01\obj\Debug\net5.0\Crawler01.AssemblyInfoInputs.cache
+C:\Users\Lucas\source\repos\Crawler01\obj\Debug\net5.0\Crawler01.AssemblyInfo.cs
+C:\Users\Lucas\source\repos\Crawler01\obj\Debug\net5.0\Crawler01.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\source\repos\Crawler01\obj\Debug\net5.0\Crawler01.dll
+C:\Users\Lucas\source\repos\Crawler01\obj\Debug\net5.0\ref\Crawler01.dll
+C:\Users\Lucas\source\repos\Crawler01\obj\Debug\net5.0\Crawler01.pdb

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace CrawlerDemo {
   public static class ScanBmw {
 
-    public static async Task TestarCrawler() {
+    public static async Task GoScan() {
       string url = "http://automobile.tn/neuf/bmw.3/";
       var document = new HtmlDocument();
 
@@ -31,6 +31,5 @@ namespace CrawlerDemo {
         listCar.Add(car);
       }
     }
-
   }
 }
