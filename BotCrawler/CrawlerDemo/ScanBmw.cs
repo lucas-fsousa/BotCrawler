@@ -6,7 +6,7 @@ using System.Net;
 using System.Threading.Tasks;
 
 namespace CrawlerDemo {
-  public static class BotTeste {
+  public static class ScanBmw {
 
     public static async Task TestarCrawler() {
       string url = "http://automobile.tn/neuf/bmw.3/";

@@ -8,7 +8,7 @@ namespace BootCrawler {
     }
 
     private static async Task LoadPage() {
-      await BotTeste.TestarCrawler();
+      await ScanBmw.TestarCrawler();
     }
   }
 }
