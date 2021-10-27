@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BotCrawler", "BotCrawler.csproj", "{ACFF2895-3ED0-4179-AFF7-304272ABD203}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrawlerDemo", "CrawlerDemo\CrawlerDemo.csproj", "{4C0A9933-7BCA-4617-9903-2FA5F7E4E4C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACFF2895-3ED0-4179-AFF7-304272ABD203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACFF2895-3ED0-4179-AFF7-304272ABD203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACFF2895-3ED0-4179-AFF7-304272ABD203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACFF2895-3ED0-4179-AFF7-304272ABD203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C0A9933-7BCA-4617-9903-2FA5F7E4E4C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C0A9933-7BCA-4617-9903-2FA5F7E4E4C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C0A9933-7BCA-4617-9903-2FA5F7E4E4C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C0A9933-7BCA-4617-9903-2FA5F7E4E4C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {054DBB35-EB89-4CE5-9414-8649C43C6CF0}
+	EndGlobalSection
+EndGlobal
