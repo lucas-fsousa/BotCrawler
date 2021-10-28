@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ZDrsN3KEH7cSdrh3ViYz0QabVpZWjvMm/KgRBq/i1cjekGdPbJdUVvyanG+sbMboZAxvKHZ2cyBGpjyrykB4QQ==",
+  "dgSpecHash": "JhPw8nvdkinQcW4IU8Nsh6Yxx+lebQ988i/me8BjUAWTE+cv9y0lqqWIbUmbVwblB5gLSegGlMRoMboF7lWZhQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lucas\\source\\repos\\Crawler\\CrawlerDemo02\\CrawlerDemo02.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Lucas\\.nuget\\packages\\htmlagilitypack\\1.11.37\\htmlagilitypack.1.11.37.nupkg.sha512"
+  ],
   "logs": []
 }

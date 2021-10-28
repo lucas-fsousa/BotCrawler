@@ -58,5 +58,7 @@ C:\Users\Lucas\source\repos\Crawler\BotCrawler\obj\Debug\net5.0\BotCrawler.Gener
 C:\Users\Lucas\source\repos\Crawler\BotCrawler\obj\Debug\net5.0\BotCrawler.AssemblyInfoInputs.cache
 C:\Users\Lucas\source\repos\Crawler\BotCrawler\obj\Debug\net5.0\BotCrawler.AssemblyInfo.cs
 C:\Users\Lucas\source\repos\Crawler\BotCrawler\obj\Debug\net5.0\BotCrawler.csproj.CoreCompileInputs.cache
-C:\Users\Lucas\source\repos\Crawler\BotCrawler\obj\Debug\net5.0\BotCrawler.csproj.CopyComplete
 C:\Users\Lucas\source\repos\Crawler\BotCrawler\obj\Debug\net5.0\BotCrawler.genruntimeconfig.cache
+C:\Users\Lucas\source\repos\Crawler\BotCrawler\bin\Debug\net5.0\CrawlerDemo02.dll
+C:\Users\Lucas\source\repos\Crawler\BotCrawler\bin\Debug\net5.0\CrawlerDemo02.pdb
+C:\Users\Lucas\source\repos\Crawler\BotCrawler\obj\Debug\net5.0\BotCrawler.csproj.CopyComplete

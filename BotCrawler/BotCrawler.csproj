@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CrawlerDemo02\CrawlerDemo02.csproj" />
     <ProjectReference Include="..\CrawlerDemo\CrawlerDemo.csproj" />
   </ItemGroup>
 

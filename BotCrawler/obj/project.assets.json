@@ -183,6 +183,19 @@
         "runtime": {
           "bin/placeholder/CrawlerDemo.dll": {}
         }
+      },
+      "CrawlerDemo02/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "HtmlAgilityPack": "1.11.37"
+        },
+        "compile": {
+          "bin/placeholder/CrawlerDemo02.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CrawlerDemo02.dll": {}
+        }
       }
     }
   },
@@ -595,11 +608,17 @@
       "type": "project",
       "path": "../CrawlerDemo/CrawlerDemo.csproj",
       "msbuildProject": "../CrawlerDemo/CrawlerDemo.csproj"
+    },
+    "CrawlerDemo02/1.0.0": {
+      "type": "project",
+      "path": "../CrawlerDemo02/CrawlerDemo02.csproj",
+      "msbuildProject": "../CrawlerDemo02/CrawlerDemo02.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "CrawlerDemo >= 1.0.0"
+      "CrawlerDemo >= 1.0.0",
+      "CrawlerDemo02 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -634,6 +653,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\Lucas\\source\\repos\\Crawler\\CrawlerDemo02\\CrawlerDemo02.csproj": {
+              "projectPath": "C:\\Users\\Lucas\\source\\repos\\Crawler\\CrawlerDemo02\\CrawlerDemo02.csproj"
+            },
             "C:\\Users\\Lucas\\source\\repos\\Crawler\\CrawlerDemo\\CrawlerDemo.csproj": {
               "projectPath": "C:\\Users\\Lucas\\source\\repos\\Crawler\\CrawlerDemo\\CrawlerDemo.csproj"
             }
