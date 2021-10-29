@@ -12,8 +12,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Selenium.WebDriver" Version="4.0.1" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="95.0.4638.5400" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CrawlerDemo02\CrawlerDemo02.csproj" />
     <ProjectReference Include="..\CrawlerDemo\CrawlerDemo.csproj" />
+    <ProjectReference Include="..\SeleniumDemo\SeleniumDemo.csproj" />
   </ItemGroup>
 
 </Project>

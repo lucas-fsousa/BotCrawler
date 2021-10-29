@@ -1,0 +1,12 @@
+C:\Users\Lucas\source\repos\Crawler\SeleniumDemo\bin\Debug\net5.0\SeleniumDemo.deps.json
+C:\Users\Lucas\source\repos\Crawler\SeleniumDemo\bin\Debug\net5.0\SeleniumDemo.dll
+C:\Users\Lucas\source\repos\Crawler\SeleniumDemo\bin\Debug\net5.0\ref\SeleniumDemo.dll
+C:\Users\Lucas\source\repos\Crawler\SeleniumDemo\bin\Debug\net5.0\SeleniumDemo.pdb
+C:\Users\Lucas\source\repos\Crawler\SeleniumDemo\obj\Debug\net5.0\SeleniumDemo.csproj.AssemblyReference.cache
+C:\Users\Lucas\source\repos\Crawler\SeleniumDemo\obj\Debug\net5.0\SeleniumDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lucas\source\repos\Crawler\SeleniumDemo\obj\Debug\net5.0\SeleniumDemo.AssemblyInfoInputs.cache
+C:\Users\Lucas\source\repos\Crawler\SeleniumDemo\obj\Debug\net5.0\SeleniumDemo.AssemblyInfo.cs
+C:\Users\Lucas\source\repos\Crawler\SeleniumDemo\obj\Debug\net5.0\SeleniumDemo.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\source\repos\Crawler\SeleniumDemo\obj\Debug\net5.0\SeleniumDemo.dll
+C:\Users\Lucas\source\repos\Crawler\SeleniumDemo\obj\Debug\net5.0\ref\SeleniumDemo.dll
+C:\Users\Lucas\source\repos\Crawler\SeleniumDemo\obj\Debug\net5.0\SeleniumDemo.pdb

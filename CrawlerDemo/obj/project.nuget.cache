@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NMb44cT4XWPFiJY9/n5tUEkDE7Y7ztvmG5W6BVQRZTPkaNNpMKC2l+cHBDYFgM5ED+uHW2wcCFPtJ2NcXu9KWg==",
+  "dgSpecHash": "Thrat2h5X42KTBVU5I69MoXN2yqTyZsIMCUKXtgVIayHnrNKWaCa7am0ybXjYhyR5gJCqjq78NN7YA4Yuiia+A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lucas\\source\\repos\\Crawler\\CrawlerDemo\\CrawlerDemo.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,9 @@
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\Lucas\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Lucas\\.nuget\\packages\\selenium.webdriver\\4.0.1\\selenium.webdriver.4.0.1.nupkg.sha512",
+    "C:\\Users\\Lucas\\.nuget\\packages\\selenium.webdriver.chromedriver\\95.0.4638.5400\\selenium.webdriver.chromedriver.95.0.4638.5400.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"

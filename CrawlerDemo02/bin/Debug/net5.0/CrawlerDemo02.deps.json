@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v5.0": {
       "CrawlerDemo02/1.0.0": {
         "dependencies": {
-          "HtmlAgilityPack": "1.11.37"
+          "HtmlAgilityPack": "1.11.37",
+          "Selenium.WebDriver": "4.0.1",
+          "Selenium.WebDriver.ChromeDriver": "95.0.4638.5400"
         },
         "runtime": {
           "CrawlerDemo02.dll": {}
@@ -21,7 +23,27 @@
             "fileVersion": "1.11.37.0"
           }
         }
-      }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.0.1": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/net5.0/WebDriver.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "Selenium.WebDriver.ChromeDriver/95.0.4638.5400": {}
     }
   },
   "libraries": {
@@ -36,6 +58,27 @@
       "sha512": "sha512-HioktZJuMHVW7QTwVayHDoBL8dPL68vGRLFdQXYNuSJkVfhxn6xihcocUgbR+B1Lm/YesigUvWrdH0JY+PZ+0g==",
       "path": "htmlagilitypack/1.11.37",
       "hashPath": "htmlagilitypack.1.11.37.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "Selenium.WebDriver/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-givS6L7wz4QupkyaNN7FwEl4trOHg1vfrSYmG0bGB3+QRPsDNcWUsbC70r6nB5JfbhNrKjZDPspAt0MYAB78Ig==",
+      "path": "selenium.webdriver/4.0.1",
+      "hashPath": "selenium.webdriver.4.0.1.nupkg.sha512"
+    },
+    "Selenium.WebDriver.ChromeDriver/95.0.4638.5400": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-v2mGsXpp1OdGINGwDC9qZWZcVyfFya4Bh6JmA5Jg6KuLLlOmArpPWT7+VvNCLC0LVjGcvJ96V9ManQa8Xcffeg==",
+      "path": "selenium.webdriver.chromedriver/95.0.4638.5400",
+      "hashPath": "selenium.webdriver.chromedriver.95.0.4638.5400.nupkg.sha512"
     }
   }
 }

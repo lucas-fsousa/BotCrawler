@@ -47,6 +47,14 @@
             "HtmlAgilityPack": {
               "target": "Package",
               "version": "[1.11.37, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[95.0.4638.5400, )"
             }
           },
           "imports": [

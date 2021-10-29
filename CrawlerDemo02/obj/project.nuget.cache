@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "JhPw8nvdkinQcW4IU8Nsh6Yxx+lebQ988i/me8BjUAWTE+cv9y0lqqWIbUmbVwblB5gLSegGlMRoMboF7lWZhQ==",
+  "dgSpecHash": "syDI4xaXzmoP4Ow1TkmWNuumUiIw8vhvSFXkdpIenvPCJfYTeqplZr0ZnO6gElZwWxcXMN6xh//r0sOfnXiaew==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lucas\\source\\repos\\Crawler\\CrawlerDemo02\\CrawlerDemo02.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Lucas\\.nuget\\packages\\htmlagilitypack\\1.11.37\\htmlagilitypack.1.11.37.nupkg.sha512"
+    "C:\\Users\\Lucas\\.nuget\\packages\\htmlagilitypack\\1.11.37\\htmlagilitypack.1.11.37.nupkg.sha512",
+    "C:\\Users\\Lucas\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Lucas\\.nuget\\packages\\selenium.webdriver\\4.0.1\\selenium.webdriver.4.0.1.nupkg.sha512",
+    "C:\\Users\\Lucas\\.nuget\\packages\\selenium.webdriver.chromedriver\\95.0.4638.5400\\selenium.webdriver.chromedriver.95.0.4638.5400.nupkg.sha512"
   ],
   "logs": []
 }
