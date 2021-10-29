@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace CrawlerDemo02 {
   public static class Uol {
-    public static async Task GoScan() {
+    public static async Task<MainNotice> GoScan() {
       try {
         var url = "https://www.uol.com.br/";
         var document = new HtmlDocument();
@@ -41,10 +41,11 @@ namespace CrawlerDemo02 {
           Title = mainNotice?.Descendants("h3")?.FirstOrDefault()?.InnerText.Trim(),
           Notices = notices
         };
+        return newsletter;
       } catch(Exception ex) {
         Console.WriteLine("ops... Algo deu errado!");
+        return null;
       }
-
     }
   }
 }
