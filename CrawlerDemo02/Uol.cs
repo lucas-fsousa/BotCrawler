@@ -14,33 +14,39 @@ namespace CrawlerDemo02 {
       try {
         var url = "https://www.uol.com.br/";
         var document = new HtmlDocument();
+
         using(var wc = new WebClient()) {
           var html = await Task.FromResult(wc.DownloadString(url));
           document.LoadHtml(html);
         }
+
         var otherNotices = document.DocumentNode.SelectNodes("//article[@aria-labelledby]").ToList();
         var notices = new List<Notice>();
-        foreach(var notice in otherNotices) {
-          var temporaryDescription = $"{notice?.Descendants("p")?.FirstOrDefault()?.InnerText.Trim()}";
-          if(temporaryDescription.Equals(""))temporaryDescription = "Sem descrição";
 
+        foreach(var notice in otherNotices) {
           var newNotice = new Notice {
-            Link = notice?.Descendants("a")?.FirstOrDefault()?.Attributes["href"].Value,
-            Title = notice?.Descendants("h3")?.FirstOrDefault()?.InnerText.Trim(),
-            Description = temporaryDescription
+            Link = $"{notice?.Descendants("a")?.FirstOrDefault()?.Attributes["href"].Value}",
+            Title = $"{notice?.Descendants("h3")?.FirstOrDefault()?.InnerText.Trim()}",
+            Description = $"{notice?.Descendants("p")?.FirstOrDefault()?.InnerText.Trim()}"
           };
 
-          notices.Add(newNotice);
+          if(newNotice.Description.Equals("")) {
+            newNotice.Description = "A noticia não possui uma descrição ou subtitulo.";
+          }
+
+          if(!newNotice.Title.Equals("")) {
+            notices.Add(newNotice);
+          }
         }
 
         var mainNotice = document.DocumentNode.SelectNodes("//article[@class='headlineMain section__grid__main__highlight__item']").FirstOrDefault();
-
         var newsletter = new MainNotice() {
           Description = $"{mainNotice?.Descendants("p")?.FirstOrDefault()?.InnerText.Trim()}",
           Link = mainNotice?.Descendants("a")?.FirstOrDefault()?.Attributes["href"].Value,
           Title = mainNotice?.Descendants("h3")?.FirstOrDefault()?.InnerText.Trim(),
           Notices = notices
         };
+
         return newsletter;
       } catch(Exception ex) {
         Console.WriteLine("ops... Algo deu errado!");
