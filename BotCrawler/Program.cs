@@ -9,7 +9,7 @@ namespace BootCrawler {
   class Program {
     static void Main(string[] args) {
 
-      new Thread(ScanUOL).Start();
+      //new Thread(ScanUOL).Start();
       //new Thread(ScanBMW).Start();
       //new Thread(Selenium).Start();
 
@@ -20,7 +20,7 @@ namespace BootCrawler {
     }
 
     private static void ScanUOL() {
-      UolControl.ExecuteReader();
+      UolControl.ExecuteReader().ConfigureAwait(false);
     }
 
     private static void Selenium() {

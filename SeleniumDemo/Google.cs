@@ -9,8 +9,11 @@ namespace SeleniumDemo {
     public static void SearchFor(string inputForSearch) {
       IWebDriver driver = new ChromeDriver();
       driver.Url = "https://www.google.com.br/";
+      Thread.Sleep(7000);
       var inputSearch = driver.FindElement(By.Name("q"));
+      Thread.Sleep(7000);
       inputSearch.SendKeys(inputForSearch);
+      Thread.Sleep(7000);
       inputSearch.Submit();
     }
   }
