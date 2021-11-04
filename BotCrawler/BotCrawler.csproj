@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CrawlerDemo02\CrawlerDemo02.csproj" />
+    <ProjectReference Include="..\CrawlerDemo03\CrawlerDemo03.csproj" />
     <ProjectReference Include="..\CrawlerDemo\CrawlerDemo.csproj" />
     <ProjectReference Include="..\SeleniumDemo\SeleniumDemo.csproj" />
   </ItemGroup>

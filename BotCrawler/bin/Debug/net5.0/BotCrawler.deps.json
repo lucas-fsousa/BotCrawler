@@ -10,12 +10,33 @@
         "dependencies": {
           "CrawlerDemo": "1.0.0",
           "CrawlerDemo02": "1.0.0",
+          "CrawlerDemo03": "1.0.0",
           "Selenium.WebDriver": "4.0.1",
           "Selenium.WebDriver.ChromeDriver": "95.0.4638.5400",
           "SeleniumDemo": "1.0.0"
         },
         "runtime": {
           "BotCrawler.dll": {}
+        }
+      },
+      "Fizzler/1.2.0": {
+        "runtime": {
+          "lib/netstandard2.0/Fizzler.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        }
+      },
+      "Fizzler.Systems.HtmlAgilityPack/1.2.1": {
+        "dependencies": {
+          "Fizzler": "1.2.0",
+          "HtmlAgilityPack": "1.11.37"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Fizzler.Systems.HtmlAgilityPack.dll": {
+            "assemblyVersion": "1.2.1.0",
+            "fileVersion": "1.2.1.0"
+          }
         }
       },
       "HtmlAgilityPack/1.11.37": {
@@ -191,6 +212,15 @@
           "CrawlerDemo02.dll": {}
         }
       },
+      "CrawlerDemo03/1.0.0": {
+        "dependencies": {
+          "CrawlerDemo02": "1.0.0",
+          "Fizzler.Systems.HtmlAgilityPack": "1.2.1"
+        },
+        "runtime": {
+          "CrawlerDemo03.dll": {}
+        }
+      },
       "SeleniumDemo/1.0.0": {
         "dependencies": {
           "Selenium.WebDriver": "4.0.1"
@@ -206,6 +236,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Fizzler/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CPxuWF8EPvM0rwAtMTR5G+7EuLoGNXsEfqyx06upN9JyVALZ73KgbGn3SLFwGosifiUAXrvNHtXlUwGGytdECg==",
+      "path": "fizzler/1.2.0",
+      "hashPath": "fizzler.1.2.0.nupkg.sha512"
+    },
+    "Fizzler.Systems.HtmlAgilityPack/1.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JVWdUgFd8KdsIoertmc9jgVc3eNpZmrXgk3rW91s0ymizAT3S/QresLY+bf+V8XO/kMy4mTV34h517g03fUqqw==",
+      "path": "fizzler.systems.htmlagilitypack/1.2.1",
+      "hashPath": "fizzler.systems.htmlagilitypack.1.2.1.nupkg.sha512"
     },
     "HtmlAgilityPack/1.11.37": {
       "type": "package",
@@ -339,6 +383,11 @@
       "sha512": ""
     },
     "CrawlerDemo02/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrawlerDemo03/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

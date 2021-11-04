@@ -24,6 +24,9 @@ namespace CrawlerDemo02 {
         var notices = new List<Notice>();
 
         foreach(var notice in otherNotices) {
+          if(notice.Descendants("ul").Any()) {
+            Console.WriteLine("CORNO");
+          }
           var newNotice = new Notice {
             Link = $"{notice?.Descendants("a")?.FirstOrDefault()?.Attributes["href"].Value}",
             Title = $"{notice?.Descendants("h3")?.FirstOrDefault()?.InnerText.Trim()}",

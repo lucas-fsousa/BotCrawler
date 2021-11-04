@@ -65,4 +65,8 @@ C:\Users\Lucas\source\repos\Crawler\BotCrawler\bin\Debug\net5.0\Newtonsoft.Json.
 C:\Users\Lucas\source\repos\Crawler\BotCrawler\bin\Debug\net5.0\WebDriver.dll
 C:\Users\Lucas\source\repos\Crawler\BotCrawler\bin\Debug\net5.0\SeleniumDemo.dll
 C:\Users\Lucas\source\repos\Crawler\BotCrawler\bin\Debug\net5.0\SeleniumDemo.pdb
+C:\Users\Lucas\source\repos\Crawler\BotCrawler\bin\Debug\net5.0\Fizzler.dll
+C:\Users\Lucas\source\repos\Crawler\BotCrawler\bin\Debug\net5.0\Fizzler.Systems.HtmlAgilityPack.dll
+C:\Users\Lucas\source\repos\Crawler\BotCrawler\bin\Debug\net5.0\CrawlerDemo03.dll
+C:\Users\Lucas\source\repos\Crawler\BotCrawler\bin\Debug\net5.0\CrawlerDemo03.pdb
 C:\Users\Lucas\source\repos\Crawler\BotCrawler\obj\Debug\net5.0\BotCrawler.csproj.CopyComplete

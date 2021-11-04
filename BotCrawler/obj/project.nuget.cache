@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+O4rPyEnijaU+n5A1xMUO1jl81mXpQ9TBdx4O8XGok+uRbyDi/36oGNW/Fe7JhBFBDLx5j3FAlYy8VejP0loEQ==",
+  "dgSpecHash": "jXnOBcDWvir+8bUZIQu2GxdlzTP5tzE7fJTfwFOtFDNNRElIzLITtNRNPU6yH8Usji8DVp4ZYRCpOcY5xkF+yA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lucas\\source\\repos\\Crawler\\BotCrawler\\BotCrawler.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Lucas\\.nuget\\packages\\fizzler\\1.2.0\\fizzler.1.2.0.nupkg.sha512",
+    "C:\\Users\\Lucas\\.nuget\\packages\\fizzler.systems.htmlagilitypack\\1.2.1\\fizzler.systems.htmlagilitypack.1.2.1.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\htmlagilitypack\\1.11.37\\htmlagilitypack.1.11.37.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.11\\microsoft.entityframeworkcore.5.0.11.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.11\\microsoft.entityframeworkcore.abstractions.5.0.11.nupkg.sha512",

@@ -2,6 +2,28 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "Fizzler/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Fizzler.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Fizzler.dll": {}
+        }
+      },
+      "Fizzler.Systems.HtmlAgilityPack/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Fizzler": "1.2.0",
+          "HtmlAgilityPack": "1.5.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Fizzler.Systems.HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Fizzler.Systems.HtmlAgilityPack.dll": {}
+        }
+      },
       "HtmlAgilityPack/1.11.37": {
         "type": "package",
         "compile": {
@@ -228,6 +250,20 @@
           "bin/placeholder/CrawlerDemo02.dll": {}
         }
       },
+      "CrawlerDemo03/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CrawlerDemo02": "1.0.0",
+          "Fizzler.Systems.HtmlAgilityPack": "1.2.1"
+        },
+        "compile": {
+          "bin/placeholder/CrawlerDemo03.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CrawlerDemo03.dll": {}
+        }
+      },
       "SeleniumDemo/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -244,6 +280,37 @@
     }
   },
   "libraries": {
+    "Fizzler/1.2.0": {
+      "sha512": "CPxuWF8EPvM0rwAtMTR5G+7EuLoGNXsEfqyx06upN9JyVALZ73KgbGn3SLFwGosifiUAXrvNHtXlUwGGytdECg==",
+      "type": "package",
+      "path": "fizzler/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "COPYING.LESSER.txt",
+        "COPYING.txt",
+        "fizzler.1.2.0.nupkg.sha512",
+        "fizzler.nuspec",
+        "lib/netstandard1.0/Fizzler.dll",
+        "lib/netstandard2.0/Fizzler.dll"
+      ]
+    },
+    "Fizzler.Systems.HtmlAgilityPack/1.2.1": {
+      "sha512": "JVWdUgFd8KdsIoertmc9jgVc3eNpZmrXgk3rW91s0ymizAT3S/QresLY+bf+V8XO/kMy4mTV34h517g03fUqqw==",
+      "type": "package",
+      "path": "fizzler.systems.htmlagilitypack/1.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "COPYING.txt",
+        "fizzler.systems.htmlagilitypack.1.2.1.nupkg.sha512",
+        "fizzler.systems.htmlagilitypack.nuspec",
+        "lib/netstandard1.3/Fizzler.Systems.HtmlAgilityPack.dll",
+        "lib/netstandard1.3/Fizzler.Systems.HtmlAgilityPack.pdb",
+        "lib/netstandard2.0/Fizzler.Systems.HtmlAgilityPack.dll",
+        "lib/netstandard2.0/Fizzler.Systems.HtmlAgilityPack.pdb"
+      ]
+    },
     "HtmlAgilityPack/1.11.37": {
       "sha512": "HioktZJuMHVW7QTwVayHDoBL8dPL68vGRLFdQXYNuSJkVfhxn6xihcocUgbR+B1Lm/YesigUvWrdH0JY+PZ+0g==",
       "type": "package",
@@ -726,6 +793,11 @@
       "path": "../CrawlerDemo02/CrawlerDemo02.csproj",
       "msbuildProject": "../CrawlerDemo02/CrawlerDemo02.csproj"
     },
+    "CrawlerDemo03/1.0.0": {
+      "type": "project",
+      "path": "../CrawlerDemo03/CrawlerDemo03.csproj",
+      "msbuildProject": "../CrawlerDemo03/CrawlerDemo03.csproj"
+    },
     "SeleniumDemo/1.0.0": {
       "type": "project",
       "path": "../SeleniumDemo/SeleniumDemo.csproj",
@@ -736,6 +808,7 @@
     "net5.0": [
       "CrawlerDemo >= 1.0.0",
       "CrawlerDemo02 >= 1.0.0",
+      "CrawlerDemo03 >= 1.0.0",
       "Selenium.WebDriver >= 4.0.1",
       "Selenium.WebDriver.ChromeDriver >= 95.0.4638.5400",
       "SeleniumDemo >= 1.0.0"
@@ -775,6 +848,9 @@
           "projectReferences": {
             "C:\\Users\\Lucas\\source\\repos\\Crawler\\CrawlerDemo02\\CrawlerDemo02.csproj": {
               "projectPath": "C:\\Users\\Lucas\\source\\repos\\Crawler\\CrawlerDemo02\\CrawlerDemo02.csproj"
+            },
+            "C:\\Users\\Lucas\\source\\repos\\Crawler\\CrawlerDemo03\\CrawlerDemo03.csproj": {
+              "projectPath": "C:\\Users\\Lucas\\source\\repos\\Crawler\\CrawlerDemo03\\CrawlerDemo03.csproj"
             },
             "C:\\Users\\Lucas\\source\\repos\\Crawler\\CrawlerDemo\\CrawlerDemo.csproj": {
               "projectPath": "C:\\Users\\Lucas\\source\\repos\\Crawler\\CrawlerDemo\\CrawlerDemo.csproj"
