@@ -12,3 +12,4 @@ C:\Users\Lucas\source\repos\Crawler\CrawlerDemo03\obj\Debug\net5.0\ref\CrawlerDe
 C:\Users\Lucas\source\repos\Crawler\CrawlerDemo03\obj\Debug\net5.0\CrawlerDemo03.pdb
 C:\Users\Lucas\source\repos\Crawler\CrawlerDemo03\bin\Debug\net5.0\CrawlerDemo02.dll
 C:\Users\Lucas\source\repos\Crawler\CrawlerDemo03\bin\Debug\net5.0\CrawlerDemo02.pdb
+C:\Users\Lucas\source\repos\Crawler\CrawlerDemo03\obj\Debug\net5.0\CrawlerDemo03.csproj.CopyComplete

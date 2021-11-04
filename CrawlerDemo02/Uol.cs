@@ -22,11 +22,7 @@ namespace CrawlerDemo02 {
 
         var otherNotices = document.DocumentNode.SelectNodes("//article[@aria-labelledby]").ToList();
         var notices = new List<Notice>();
-
         foreach(var notice in otherNotices) {
-          if(notice.Descendants("ul").Any()) {
-            Console.WriteLine("CORNO");
-          }
           var newNotice = new Notice {
             Link = $"{notice?.Descendants("a")?.FirstOrDefault()?.Attributes["href"].Value}",
             Title = $"{notice?.Descendants("h3")?.FirstOrDefault()?.InnerText.Trim()}",
@@ -36,8 +32,14 @@ namespace CrawlerDemo02 {
           if(newNotice.Description.Equals("")) {
             newNotice.Description = "A noticia não possui uma descrição ou subtitulo.";
           }
-
-          if(!newNotice.Title.Equals("")) {
+          string[] test = { "ao_vivo", "aovivo", "ao-vivo" };
+          foreach(var valid in test) {
+            if(newNotice.Link.Split("/").Contains(valid)) {
+              newNotice.Link = "";
+              Console.WriteLine("Foi 1");
+            }
+          }
+          if(!newNotice.Title.Equals("") && !newNotice.Link.Equals("")) {
             notices.Add(newNotice);
           }
         }

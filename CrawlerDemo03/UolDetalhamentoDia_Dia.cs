@@ -24,7 +24,7 @@ namespace CrawlerDemo03 {
         var divBase = document.DocumentNode.SelectNodes("//div[@class='  author  ']")?.FirstOrDefault();
         if(check.Equals("")) {
           details.Autor = "UOL";
-          details.PublishDate = $"{document.DocumentNode.SelectSingleNode("//time[@class='c-more-options__published-date']").InnerText}";
+          details.PublishDate = $"{document.DocumentNode.SelectSingleNode("//time[@class='c-more-options__published-date']")?.InnerText}";
           details.AutorLocation = "SP - São Paulo";
         } else {
           details.Autor = $"{divBase.Descendants("p")?.Where(x => x.Attributes["class"].Value.Equals("p-author"))?.FirstOrDefault()?.InnerText}";
