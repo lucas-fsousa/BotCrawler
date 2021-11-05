@@ -32,11 +32,12 @@ namespace CrawlerDemo02 {
           if(newNotice.Description.Equals("")) {
             newNotice.Description = "A noticia não possui uma descrição ou subtitulo.";
           }
-          string[] test = { "ao_vivo", "aovivo", "ao-vivo" };
-          foreach(var valid in test) {
-            if(newNotice.Link.Split("/").Contains(valid)) {
+
+          foreach(var valid in "ao-vivo,aovivo,ao_vivo".Split(",")) {
+            var validLink = $"{newNotice.Link.Split("/").Where(x=> x.IndexOf(valid, 0).Equals(0)).FirstOrDefault()}";
+            if(!validLink.Equals("")) {
               newNotice.Link = "";
-              Console.WriteLine("Foi 1");
+              break;
             }
           }
           if(!newNotice.Title.Equals("") && !newNotice.Link.Equals("")) {
