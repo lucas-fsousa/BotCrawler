@@ -21,7 +21,6 @@ namespace BootCrawler {
     }
 
     private static void ScanUOL() {
-      //UolControl.ExecuteReader().ConfigureAwait(false);
       var notices = Uol.GoScan().Result;
       foreach(var item in notices.Notices) {
         var rec = UolDetalhamentoDia_Dia.ReadByLink(item.Link);

@@ -11,8 +11,8 @@ using System.Threading.Tasks;
 namespace CrawlerDemo03 {
   public static class UolDetalhamentoDia_Dia {
 
-    public static Teste ReadByLink(string link) {
-      var details = new Teste();
+    public static DetailsNotice ReadByLink(string link) {
+      var details = new DetailsNotice();
       try {
         var document = new HtmlDocument();
         using(var wc = new WebClient()) {
@@ -20,16 +20,15 @@ namespace CrawlerDemo03 {
         }
         // checks nullable
         var check = $"{document.DocumentNode.SelectNodes("//div[@class='  author  ']")?.FirstOrDefault()}";
-        
         var divBase = document.DocumentNode.SelectNodes("//div[@class='  author  ']")?.FirstOrDefault();
         if(check.Equals("")) {
           details.Autor = "UOL";
           details.PublishDate = $"{document.DocumentNode.SelectSingleNode("//time[@class='c-more-options__published-date']")?.InnerText}";
           details.AutorLocation = "SP - São Paulo";
         } else {
-          details.Autor = $"{divBase.Descendants("p")?.Where(x => x.Attributes["class"].Value.Equals("p-author"))?.FirstOrDefault()?.InnerText}";
-          details.PublishDate = $"{divBase.Descendants("p")?.Where(x => x.Attributes["class"].Value.Equals("p-author time"))?.FirstOrDefault()?.InnerText.ToString()}";
-          details.AutorLocation = $"{divBase.Descendants("p")?.Where(x => x.Attributes["class"].Value.Equals("p-author-local"))?.FirstOrDefault()?.InnerText.ToString()}";
+          details.Autor = $"{divBase.Descendants("p")?.Where(x => x.Attributes["class"].Value.Equals("p-author"))?.FirstOrDefault()?.InnerText}".Trim();
+          details.PublishDate = $"{divBase.Descendants("p")?.Where(x => x.Attributes["class"].Value.Equals("p-author time"))?.FirstOrDefault()?.InnerText.ToString()}".Trim();
+          details.AutorLocation = $"{divBase.Descendants("p")?.Where(x => x.Attributes["class"].Value.Equals("p-author-local"))?.FirstOrDefault()?.InnerText.ToString()}".Trim();
           if(details.Autor.Equals("")) details.Autor = "Autor desconhecido / Colaboração Externa";
           
           foreach(var p in document.DocumentNode.SelectNodes("//div[@class='text  ']").FirstOrDefault().Descendants("p").ToList()) {
@@ -49,7 +48,7 @@ namespace CrawlerDemo03 {
   }
 
 
-  public class Teste {
+  public class DetailsNotice {
     public string AutorLocation { get; set; }
     public string Autor { get; set; }
     public string PublishDate { get; set; }
