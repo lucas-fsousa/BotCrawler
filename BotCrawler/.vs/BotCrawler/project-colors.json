@@ -10,7 +10,12 @@
       "ProjectGuid": "acff2895-3ed0-4179-aff7-304272abd203",
       "DisplayName": "BotCrawler",
       "ColorIndex": 1
+    },
+    "039f7d6d-1c87-4a5e-808b-9e552d2a57cb": {
+      "ProjectGuid": "039f7d6d-1c87-4a5e-808b-9e552d2a57cb",
+      "DisplayName": "CrawlerDemo02",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }

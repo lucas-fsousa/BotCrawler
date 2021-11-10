@@ -21,17 +21,7 @@ namespace BootCrawler {
     }
 
     private static void ScanUOL() {
-      var notices = Uol.GoScan().Result;
-      foreach(var item in notices.Notices) {
-        var rec = UolDetalhamentoDia_Dia.ReadByLink(item.Link);
-        if(rec.PublishNotes.Trim().Length > 1) {
-          Console.WriteLine($"{item.Title}\n\t{item.Description}\n");
-          Console.WriteLine($"{rec.Autor} - {rec.AutorLocation} - {rec.PublishDate}\n");
-          Console.WriteLine($"{rec.PublishNotes}");
-          Console.WriteLine("\n=================================================================================\n");
-          Thread.Sleep(2000);
-        }
-      }
+      UolControl.ExecuteReader();
     }
 
     private static void Selenium() {
