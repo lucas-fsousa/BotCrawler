@@ -22,6 +22,8 @@ namespace CrawlerDemo02 {
             Thread.Sleep(1000); // espera 1 segundo
             Console.Clear(); // limpa o console
           }
+          Console.WriteLine("Realizando novo scan...");
+          Thread.Sleep(5000); // espera 5 segundos
         }
       }
     }
