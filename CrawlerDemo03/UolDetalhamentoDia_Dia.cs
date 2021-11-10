@@ -34,18 +34,25 @@ namespace CrawlerDemo03 {
         }
 
         string divText = $"{document.DocumentNode.SelectNodes("//div[@class='text  ']")?.FirstOrDefault()?.Descendants("p")?.ToList()}";
-        string divTextSection = $"{ document.DocumentNode.SelectNodes("//div[@class='c-news__body']")?.FirstOrDefault()?.Descendants("p")?.ToList()}";
+        string divTextSection = $"{document.DocumentNode.SelectNodes("//div[@class='c-news__body']")?.FirstOrDefault()?.Descendants("p")?.ToList()}";
         string divAlt = $"{document.DocumentNode.SelectNodes("//div[@id='modal-ready']")?.FirstOrDefault()?.Descendants("p")?.ToList()}";
         string divTextAlt = $"{document.DocumentNode.SelectNodes("//div[@class='text']")?.FirstOrDefault()?.Descendants("p")?.ToList()}";
+        string divTextAlt2 = $"{document.DocumentNode.SelectNodes("//div[@class='text has-image ']")?.FirstOrDefault()?.Descendants("p")?.ToList()}";
+
 
         if(!divText.Equals("")) {
           text = document.DocumentNode.SelectNodes("//div[@class='text  ']").FirstOrDefault().Descendants("p").ToList();
-        }else if(!divTextSection.Equals("")) {
+        } else if(!divTextSection.Equals("")) {
           text = document.DocumentNode.SelectNodes("//div[@class='c-news__body']").FirstOrDefault().Descendants("p").ToList();
-        }else if(!divAlt.Equals("")) {
+        } else if(!divAlt.Equals("")) {
           text = document.DocumentNode.SelectNodes("//div[@id='modal-ready']").FirstOrDefault().Descendants("p").ToList();
-        }else if(!divTextAlt.Equals("")) {
+        } else if(!divTextAlt.Equals("")) {
           text = document.DocumentNode.SelectNodes("//div[@class='text']").FirstOrDefault().Descendants("p").ToList();
+        } else if(!divTextAlt2.Equals("")) {
+          text = document.DocumentNode.SelectNodes("//div[@class='text has-image ']").FirstOrDefault().Descendants("p").ToList();
+        } else {
+          text = new List<HtmlNode>();
+          text.Add(HtmlNode.CreateNode("<p></p>"));
         }
 
         foreach(var p in text) {
@@ -54,9 +61,10 @@ namespace CrawlerDemo03 {
       } catch(Exception ex) {
         Console.BackgroundColor = ConsoleColor.Red;
         Console.ForegroundColor = ConsoleColor.Black;
-        Console.WriteLine("Ops... Ocorreu um erro. ");
+        Console.WriteLine($"Ops... Ocorreu um erro no scan do link {link} ");
         Console.ResetColor();
         Console.WriteLine($"\n{ex.Message}");
+
         details = null;
       }
       return details;

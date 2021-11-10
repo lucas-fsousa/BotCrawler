@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "73356691-be18-41d4-ae64-d84b9d9a249c": {
+      "ProjectGuid": "73356691-be18-41d4-ae64-d84b9d9a249c",
+      "DisplayName": "CrawlerDemo03",
+      "ColorIndex": 0
+    },
+    "acff2895-3ed0-4179-aff7-304272abd203": {
+      "ProjectGuid": "acff2895-3ed0-4179-aff7-304272abd203",
+      "DisplayName": "BotCrawler",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
